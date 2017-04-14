@@ -1,4 +1,5 @@
 require_relative '../spec_helper'
+require 'pry'
 
 describe 'Song Associations' do
   before do
@@ -29,6 +30,7 @@ describe 'Song Associations' do
   end
 
   it 'can build genres' do
+
     genre = @song.build_genre(name: "Rap")
     @song.save
 
